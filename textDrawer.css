@@ -1,0 +1,19 @@
+.show-text-drawer {
+	display: block;
+	position: relative;
+}
+
+.show-text-drawer textarea {
+	margin: 0px;
+	border: 0px;
+	border-bottom: 1px solid #A09595;
+	padding: 0px;
+	resize: none;
+}
+
+.show-text-drawer > div {
+	text-align: center;
+	font-variant: small-caps;
+	border: 1px solid #A09595;
+	background-color: white;
+}
