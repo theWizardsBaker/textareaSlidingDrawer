@@ -6,7 +6,9 @@
 
 		var _defaults = {
 			expandText : "expand",
+			expandAnimEasing: "linear",
 			contractText : "contract",
+			contractAnimEasing: "linear",
 			animationSpeed : 700,
 			minSize : 200,
 			maxSize : 400,
@@ -27,7 +29,6 @@
 													'position' : 'absolute',
 													'width' : $textarea.width()
 													});
-
 			// remove textelement from DOM so we can work on it
 			$textarea.detach();	
 
@@ -57,7 +58,7 @@
 					$textarea.animate(
 						{'height': bindingBox.data('show-text-drawer')}, 
 						700, 
-						"easeOutExpo", 
+						_settings.contractAnimEasing, 
 						function(){
 							bindingBox.removeData('show-text-drawer');
 					});
@@ -80,7 +81,7 @@
 					$textarea.animate(
 						{'height': lineNum}, 
 						700, 
-						"easeInQuart"
+						_settings.expandAnimEasing
 					);
 					//set button text
 					$(this).text(_settings.contractText);
