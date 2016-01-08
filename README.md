@@ -8,3 +8,4 @@ As simple as:
 $('textarea').showTextDrawer();
 ```
 
+[JSFiddle](https://jsfiddle.net/xy8ofvdu/2/)
